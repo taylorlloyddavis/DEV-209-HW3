@@ -1,0 +1,16 @@
+
+fieldset {
+font-family: arial;
+background-color:rgb(238, 202, 227);	
+border:1px solid rgb(126, 54, 241);
+margin:10px 0px 30px 2.5%;
+width:70%;
+}
+
+/*  this overides the generic fieldset css setting for this item by id */
+#welcome {
+background-color:rgb(113, 182, 238);	
+border:1px solid rgb(5, 37, 49);
+margin:10px 0px 30px 2.5%;
+width:46%;
+}

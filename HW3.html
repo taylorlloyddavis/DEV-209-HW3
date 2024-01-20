@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to the webpage!</title>
+      <link rel="stylesheet" type="text/css" href="HW3.css">
+</head>
+
+<body>
+
+  <form name = "mainFrom" onsubmit="return false">
+    
+  <fieldset id="welcome">
+    <legend>Welcome to my Webpage!</legend>
+        
+    <input type="submit" value="Click for New User" onclick="formSubmitEvent()" id="button1">
+    <input type="submit" value="Click for Existing User" onclick="formSubmitEvent()" id="button2">
+   </fieldset>
+
+<!--       The <fieldset> tag is used to group related elements in a form. -->
+	<fieldset id="newUser">
+    <!--       The <legend> tag is puts a title on this subset of the form -->
+    <legend>NewUser</legend>
+    <!--       for= some id connects the lable to to the input box -->
+   <label for="username"> UserName:</label> 
+   <input type="text" id="username" placeholder="Enter your username">
+    
+    <label for="password">Password:</label>
+    <input type="text" id="password" placeholder="Enter your password">
+    
+     <label for="city">City:</label>
+     <input type="text" id="city" placeholder="Enter your city">
+    
+	<label for="state">State (abbr.):</label>
+    <input type="text" id="state" placeholder="Enter your state">
+    
+     <!-- here we submit to a local js file -->
+    <input type="submit" value="Login" onclick="formSubmitEvent()" id="button3">
+      <!-- <input type="submit" > -->
+    </fieldset>
+
+
+    <fieldset id="exist">
+        <!--       The <legend> tag is puts a title on this subset of the form -->
+        <legend>Existing User</legend>
+        <!--       for= some id connects the lable to to the input box -->
+       <label for="username"> UserName:</label> 
+       <input type="text" id="username2" placeholder="Enter your username">
+    
+        <label for="password">Password:</label>
+        <input type="text" id="password2" placeholder="Enter your password">
+        
+        <!-- here we submit to a local js file -->
+        <input type="submit" value="Login" onclick="formSubmitEvent()" id="button4">
+         </fieldset>
+  
+    </form>
+
+
+<script type="text/javascript" src="HW3.js"></script>
+</body>
+</html>
